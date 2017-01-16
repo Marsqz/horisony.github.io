@@ -1,0 +1,223 @@
+body {
+	color:#333;
+	background: #393837;
+	margin:0;
+	/*font-family: 'Open Sans', sans-serif;*/
+}
+a:hover,
+a:focus,
+a:active{
+	color: #337ab7;
+}
+img{
+	border:none;
+}
+.navbar-transparent{
+	background: transparent;
+	border: none;
+}
+.nav_banner{
+	width:100%;
+	height: 200px;
+	background: #ddd;
+	background-size: cover;
+	background-position: center;
+}
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+}
+.txt-center{
+	text-align: center;
+}
+.flex{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}		
+.flex--center{
+	justify-content: center;
+}
+.flex--space-around{
+	justify-content: space-around;
+}
+.flex--space-between{
+	justify-content: space-between;
+}
+.logo{
+	width: 33px;
+	height: 33px;
+	float: left;
+	margin: -6px 8px 0 -6px;
+}
+.tags-container{
+	margin-bottom: 20px;
+	margin-top: 12px;
+}
+.tags-container>.tag {
+	padding: 6px 20px;
+	border-radius: 24px;
+	border: 1px solid #ddd;
+	margin: 12px 6px 0px 6px;
+	background: white;
+	color: #666;
+	transition: all .25s;
+}
+.tags-container>.tag.active{
+	background: #f2483b;
+	border: 1px solid #e7463a;
+	color: white;
+}
+.tags-container>.tag:hover{
+	background: #f2483b;
+	border: 1px solid #e7463a;
+	color: white;
+}
+.self-intro{
+	text-align: center;
+	padding: 20px 80px 6px 80px;
+	margin-bottom: 6px;
+	color: white;
+	font-weight: 100;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background: none;
+	color: #e7463a;
+	border-bottom: 2px solid #e7463a;
+	font-size: 13px;
+	padding: 18px 0 6px 0;
+	margin: 0 12px;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #e7463a;
+	border-bottom: 2px solid #e7463a;
+}
+.navbar-default .navbar-brand{
+	color: #e7463a;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Roboto', serif;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+	color: #f5564a;
+}
+.navbar-default .navbar-nav>li>a{
+	padding: 18px 0 6px 0;
+	margin: 0 12px;
+	color:rgba(255,255,255,0.65);
+	font-family: 'Roboto', serif;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+	color: #e7463a;
+}
+.navbar-default{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: all 300ms;
+	z-index: 10000;
+}
+.navbar-hide{
+	transform: translateY(-50px);	
+}
+.navbar-custom{
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 0;
+	border-bottom: 1px solid #ddd;
+}
+.container{
+	padding-top: 65px;
+	position:relative;
+	padding-left: 0;
+	padding-right: 0;
+}
+.project-container{
+	width: 290px;
+	height: 260px;
+	background: white;
+	/*margin: 0 10px 20px 10px;*/
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+}
+.project-container:hover{
+	/*box-shadow: 0 2px 18px #ccc;*/
+	box-shadow: 0 1px 10px rgba(242, 72, 59, .4);
+	/*border:1px solid rgba(242, 72, 59, 1);*/
+}
+
+.pro-intro-container{
+	background: transparent;
+	width: 100%;
+	/*height: 76px;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	/*bottom: -30px;*/
+	padding: 16px 12px;
+	transition: all .3s;
+	transition-timing-function: ease-in-out;
+	color: #fff;
+	text-align: center;
+}
+.project-container:hover .pro-intro-container{
+	bottom: 0px;
+	/*background: rgba(255,255,255, .55);*/
+	background: rgba(242, 72, 59, 0.95);
+	color: white;
+	padding-top: 92px;
+
+}
+.project-container:hover .pro-intro-container>.pro-txt{
+	color: white;
+}
+.project-container:hover .pro-intro-container>.pro-title{
+	color: white;
+	font-size: 18px;
+}
+.pro-intro-container>.pro-title{
+	font-size: 16px;
+	line-height: 170%;
+	/*color: #333;*/
+	font-family: 'helvetica neue', arial;
+	font-weight: 200;
+	transition: all .3s;
+}
+.pro-intro-container>.pro-txt{
+	/*font-weight: 100;*/
+	font-weight: 200;
+	color: transparent;
+}
+.to-top{
+	width:44px;
+	height: 44px;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	border-radius: 22px;
+	border:1px solid #ddd;
+	background: #fff;
+	box-shadow: 0 2px 5px #666;
+	position: fixed;
+	right: 30px;
+	bottom: 10%;
+	background-image: url(../imgs/to-top-icon.svg);
+	background-size: cover;
+}
+.to-top:hover{
+	background: #f5f5f5;
+	background-image: url(../imgs/to-top-icon.svg);
+}
+.footer{
+	text-align: center;
+	/*border-top: 1px solid #666;*/
+	padding:40px 0;
+	color: #666;
+}
