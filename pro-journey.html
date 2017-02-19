@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>eBay Journey 2016</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- <div class="nav_banner" style="background-image: url(imgs/banner.png);"> -->
+<!-- 	<nav class="navbar navbar-default navbar-transparent">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>BAOLING</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav navbar-right">
+			        <li class="active"><a href="index.html">PORTFOLIO</a></li>
+			        <li><a href="writings.html">WRITINGS</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+			    </ul>
+			</div>
+		</div>
+	</nav> -->
+<!-- </div> -->
+	<div class="module banner" style="background-image: url(imgs/pro-journey/banner.png);"></div>
+	<div class="module" style="background-color: #454a4c;">
+		<div class="content" style="padding-top: 0;">
+			<div class="title">eBay Journey 2016</div>
+			<div class="txt txt-intro">eBay Journey 2016 is a website that shows a customer what he or she has done on eBay in 2016. It displays the user's GMB, GMV, first purchasing, first selling, etc., all in real data supported by eBay Data Service and Solutions (DSS) Department. </div>
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="col-md-6-my intro">
+				<div class="title">Goal</div>
+				<div class="txt">The goal is to remind eBay users of their special moments on eBay, try to get them back to eBay in the coming future. </div>
+			</div>
+			<div class="col-md-6-my"><img style="width: 60%; max-width: 100%;" src="imgs/pro-journey/goal.png"></div>
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content">
+			<div class="title1">Keywords</div>
+			<img style="width: 100%;" src="imgs/pro-journey/keywords.png">
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title1">Concept1--Time Machine</div>
+			<div class="col-md-6-my"></div>
+			<div class="col-md-6-my">
+				<img style="width: 100%;" src="imgs/pro-journey/sketch2.png">
+			</div>
+
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content clearfix">
+			<div class="title1">Concept2--Travelling</div>
+			<img style="width: 100%; max-width: 100%;" src="imgs/pro-journey/sketch2.png">
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content">
+			<div class="title1">Final Design</div>
+		</div>
+		<a href="imgs/pro-journey/walking-bg.png" target="_blank" style="cursor: pointer;"><img style="width: 100%; max-width: 100%;" src="imgs/pro-journey/visual.png"></a>
+		<div class="content">
+			<img style="width: 100%; max-width: 100%; margin-bottom: 30px;" src="imgs/pro-journey/visual2.png">
+		</div>
+	</div>
+	<div class="module" style="background-color: white;">
+		<div class="content starting-page clearfix">
+			<!-- <div class="title1">Play with it</div> -->
+				<div class="col-md-6-my">
+					<div class="people">
+						<div class="walking" id="walking-people-home"></div>
+					</div>
+				</div>
+				<div class="col-md-6-my">
+					<div class="welcome-title" style="line-height: 120%;">Click the button to start playing eBay Journey 2016 demo.<br/>
+						<a href="ebay-journey" target="_blank"><button class="launch-btn"> Launch </button></a>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ports">
+		This website is designed and developed by Baoling Yang, all copyright reserved.<br/>
+		Copyright @杨宝玲 2017
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		}); 
+	</script>
+
+</body>
+</html>

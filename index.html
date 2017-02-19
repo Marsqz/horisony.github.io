@@ -13,147 +13,159 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
-<body> 
+<body class="home-body"> 
 	<!-- <div class="nav_banner" style="background-image: url(imgs/banner.png);"> -->
 		<nav class="navbar navbar-default navbar-transparent">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar" style="background: rgba(255,255,255,0.8);"></span>
-						<span class="icon-bar" style="background: rgba(255,255,255,0.8);"></span>
-						<span class="icon-bar" style="background: rgba(255,255,255,0.8);"></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
 					</button>
-					<a class="navbar-brand" href="#"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>BAOLING</a>
+					<a class="navbar-brand" href="index.html"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>BAOLING</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				    <ul class="nav navbar-nav navbar-right">
-				        <li class="active"><a href="#">PORTFOLIO</a></li>
-				        <li><a href="#">WRITINGS</a></li>
-				        <li><a href="#">ABOUT</a></li>
+				        <li class="active"><a href="index.html">PORTFOLIO</a></li>
+				        <li><a href="writings.html">WRITINGS</a></li>
+				        <li><a href="about.html">ABOUT</a></li>
 				    </ul>
 				</div>
 			</div>
 		</nav>
 	<!-- </div> -->
 
-	<div class="container">
-	<!-- <div class="self-intro">
-		Baoling is a ux deisigner <br/> Baoling is a ux deisignerBaoling is a ux deisignerBaoling is a ux deisignerBaoling is a ux deisigner
-	</div> -->
+	<div class="container-my">
+	<div class="self-intro">
+		<div class="title">Welcome to my website！</div> <div class="txt">Baoling Yang is a ux designer, a quick learner, and a girl with enormous passion.</div> 
+	</div>
 		<div class="tags-container flex flex--center">
-			<div class="tag active">All</div>
-			<div class="tag">UX Design</div>
-			<div class="tag">Visual Design</div>
-			<div class="tag">Video Design</div>
-			<div class="tag">3D Design</div>
+			<div class="tag active" id="tagAll" style="cursor: pointer;">All</div>
+			<div class="tag" id="tagUX" style="cursor: pointer;">UX Design</div>
+			<div class="tag" id="tagVisual" style="cursor: pointer;">Visual Design</div>
+			<div class="tag" id="tagVideo" style="cursor: pointer;">Animations</div>
+			<div class="tag" id="tag3d" style="cursor: pointer;">3D Design</div>
 		</div>
 
-		<div class="pro-container flex flex--center">
-			<a href="#">
-				<div class="project-container" style="background-color:#d0eefb; background-image: url(imgs/pro-journey.png); background-size: cover; background-position: center;">
+		<div class="pro-container clearfix">
+			<a href="pro-journey.html" target="_blank">
+				<div class="project-container UX Visual" style="background-color:#d0eefb; background-image: url(imgs/pro-journey.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
-						<div class="pro-title">eBay Journey 2016</div> 
+						<div class="pro-title darker">eBay Journey 2016</div> 
 						<div class="pro-txt">A website showing users' behavior</div>
 					</div>
 				</div>
 			</a>		
-			<a href="#">
-				<div class="project-container" style="background-color:#4e9fe3; background-image: url(imgs/pro-ai.png); background-size: cover; background-position: center; ">
+<!-- 			<a href="pro-ai.html" target="_blank">
+				<div class="project-container UX" style="background-color:#4e9fe3; background-image: url(imgs/pro-ai.png); background-size: cover; background-position: center; ">
 					<div class="pro-intro-container">
 						<div class="pro-title">AI Shopping Assistant</div> 
 						<div class="pro-txt">Shopping with chatbot | Android app</div>
 					</div>
 				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-color:#ffad54; background-image: url(imgs/pro-ar.png); background-size: cover; background-position: center;">
+			</a> -->
+			<a href="pro-ar.html" target="_blank">
+				<div class="project-container UX 3D" style="background-color:#ffad54; background-image: url(imgs/pro-ar.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
 						<div class="pro-title">AR Shopping</div> 
 						<div class="pro-txt">eBay skunkworks China 1st prize</div>
 					</div>
 				</div>
 			</a>
-			<a href="#">
-				<div class="project-container" style="background-color:#347ab7;background-image: url(imgs/pro-sm.png); background-size: cover; background-position: center;">
+			
+			<a href="pro-ai.html" target="_blank">
+				<div class="project-container UX" style="background-color:#4e9fe3; background-image: url(imgs/pro-ai.png); background-size: cover; background-position: center; ">
+					<div class="pro-intro-container">
+						<div class="pro-title">AI Shopping Assistant</div> 
+						<div class="pro-txt">Shopping with chatbot | Android app</div>
+					</div>
+				</div>
+			</a>
+			<a href="pro-smd.html" target="_blank">
+				<div class="project-container UX" style="background-color:#17b86e;background-image: url(imgs/pro-sm.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
 						<div class="pro-title">Site Merchandiser Scorecard</div> 
 						<div class="pro-txt">eBay internal data website</div>
 					</div>
 				</div>
 			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/pro-dataViz.png); background-size: cover; background-position: center;">
+			<!-- <a href="#" target="_blank">
+				<div class="project-container Visual" style="background-image: url(imgs/pro-dataViz.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
 						<div class="pro-title">eBay Behavior Analytics</div> 
 						<div class="pro-txt">Data visualization of eBay users</div>
 					</div>
 				</div>
 			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/logo.png); background-size: cover; background-position: center;">
+
+			<a href="#" target="_blank">
+				<div class="project-container UX" style="background-color: #3fba6b; background-image: url(imgs/pro-campus.png); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">Click Map Dashboard</div> 
+						<div class="pro-txt">XXXXX</div>
+					</div>
+				</div>
+			</a>
+			<a href="#" target="_blank">
+				<div class="project-container UX" style="background-image: url(imgs/pro-namecard.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
 						<div class="pro-title">Business Card Wechat OA</div> 
 						<div class="pro-txt">Mobile web Wechat official account</div>
 					</div>
 				</div>
 			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/logo.png); background-size: cover; background-position: center;">
+			<a href="pro-3d.html" target="_blank">
+				<div class="project-container 3D" style="background: #f7f6f6; background-image: url(imgs/pro-3d.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
-						<div class="pro-title">Campus Assistant App</div> 
-						<div class="pro-txt">Help students get a better campus life</div>
+						<div class="pro-title" >CRM System of Moody's</div> 
+						<div class="pro-txt">During my internship in Moody's</div>
 					</div>
 				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/pro-remote.png); background-size: cover; background-position: center;">
+			</a> -->
+			<a href="file/baoling-thesis.pdf" target="_blank">
+				<div class="project-container 3D UX" style="background-image: url(imgs/pro-thesis.png); background-size: cover; background-position: center;">
 					<div class="pro-intro-container">
-						<div class="pro-title">Remote Control for Smart TV</div> 
-						<div class="pro-txt"> Hardware and user interface design</div>
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/pro-visual.png); background-size: cover; background-position: center;">
-					<div class="pro-intro-container">
-						<div class="pro-title">Visual Designs</div> 
-						<div class="pro-txt">Personal Practices</div>
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/pro-video.png); background-size: cover; background-position: center;">
-					<div class="pro-intro-container">
-						<div class="pro-title">Marketing Videos for eBay</div> 
-						<div class="pro-txt">Videos made with After Effects</div>
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/logo.png); background-size: cover; background-position: center;">
-					<div class="pro-intro-container">
-						<div class="pro-title">3D Modeling</div> 
-						<div class="pro-txt">Made with Solidworks and Rhino</div>
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="project-container" style="background-image: url(imgs/logo.png); background-size: cover; background-position: center;">
-					<div class="pro-intro-container">
-						<div class="pro-title">Thesis</div> 
-						<div class="pro-txt">About data visualization</div>
+						<div class="pro-title">Thesis Presentation</div> 
+						<div class="pro-txt">Data visualization of authors cooperation network in academics</div>
 					</div>
 				</div>
 			</a>
 
+			<a href="pro-visual.html" target="_blank">
+				<div class="project-container Visual" style="background-image: url(imgs/pro-visual.png); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title">Sketches/Graphic/3D</div> 
+						<div class="pro-txt">Graduation study and internship</div>
+					</div>
+				</div>
+			</a>
+			<a href="pro-video.html" target="_blank">
+				<div class="project-container Video" style="background-color: #add5e2; background-image: url(imgs/pro-video.png); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title darker">Animation Videos for eBay</div> 
+						<div class="pro-txt">Animations made for hiring and marketing.</div>
+					</div>
+				</div>
+			</a>
+			
+			<a href="pro-grad.html" target="_blank">
+				<div class="project-container" style="background-image: url(imgs/pro-grad.png); background-size: cover; background-position: center;">
+					<div class="pro-intro-container">
+						<div class="pro-title darker">Graduation Project</div> 
+						<div class="pro-txt">Final project of my graduate study</div>
+					</div>
+				</div>
+			</a>
 
-		</div>	
+		</div>		
 	</div>	<!--container ends-->
 	<a href="#"><div class="to-top"></div></a>
 	
 	<div class="footer">
+		This website is designed and developed by Baoling Yang, all copyright reserved.<br/>
 		Copyright @杨宝玲 2017
 	</div>
 
@@ -162,36 +174,24 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() { 
-			$(".btn-all").click(function(){
+			$("#tagAll").click(function(){
 				$(".project-container").show();
 			});
-			$(".btn-GRO").click(function() {
-				$(".project-container").not(".GRO-pro").hide();
-				$(".GRO-pro").show();
+			$("#tagUX").click(function() {
+				$(".project-container").not(".UX").hide();
+				$(".UX").show();
 			});
-			$(".btn-nous").click(function() {
-				$(".project-container").not(".nous-pro").hide();
-				$(".nous-pro").show();
+			$("#tagVisual").click(function() {
+				$(".project-container").not(".Visual").hide();
+				$(".Visual").show();
 			});
-			$(".btn-ebaypulse").click(function() {
-				$(".project-container").not(".pulse-pro").hide();
-				$(".pulse-pro").show();
+			$("#tagVideo").click(function() {
+				$(".project-container").not(".Video").hide();
+				$(".Video").show();
 			});
-			$(".btn-datalabs").click(function() {
-				$(".project-container").not(".datalabs-pro").hide();
-				$(".datalabs-pro").show();
-			});
-			$(".btn-dna").click(function() {
-				$(".project-container").not(".dna-pro").hide();
-				$(".dna-pro").show();
-			});
-			$(".btn-m1").click(function() {
-				$(".project-container").not(".dna-m1").hide();
-				$(".m1-pro").show();
-			});
-			$(".btn-ihub").click(function() {
-				$(".project-container").not(".ihub-pro").hide();
-				$(".ihub-pro").show();
+			$("#tag3d").click(function() {
+				$(".project-container").not(".3D").hide();
+				$(".3D").show();
 			});
 			
 			$(".to-top").hide();
@@ -214,12 +214,10 @@
 						$(".navbar").removeClass("navbar-custom");
 					}
 				}
-
 				currTop = windowTop;
-
 			});
 
-			$(".tags>.btn").click(function(){
+			$(".tag").click(function(){
 				$(this).siblings().removeClass("active");
 				$(this).addClass("active");
 			});

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Sketches/Graphic/3D</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color:#393837;">
+<!-- <div class="nav_banner" style="background-image: url(imgs/banner.png);"> -->
+<!-- 	<nav class="navbar navbar-default navbar-transparent">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>BAOLING</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav navbar-right">
+			        <li class="active"><a href="index.html">PORTFOLIO</a></li>
+			        <li><a href="writings.html">WRITINGS</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+			    </ul>
+			</div>
+		</div>
+	</nav> -->
+<!-- </div> -->
+	<!-- <div class="module banner" style="background-color:#ffcc4d; height: 240px;"></div> -->
+	<div class="module" style="background-color:#393837;">
+		<div class="content" style="padding: 35px 3% 35px 3%">
+			<div class="title">Sketches/Graphic/3D</div>
+			<div class="txt " style="letter-spacing: 0px; padding-bottom: 12px;">I love designs and the sense of fulfilment by creating something from nothing. Here are some of my hand drawings, graphic designs and 3D modelling during my graduate study and work in eBay from 2013 to 2016.</div>
+		</div>
+	</div>
+	<div class="module" style="background-color: #393837; padding: 0;">
+		<div class="content" style="padding: 15px 3% 25px 3%">
+			<div class="txt1" style="text-align: center; padding-bottom: 12px; color: rgba(255,255,255,0.7);">Hand drawings with wacom (Click to view large images)</div>
+			<a href="sketch.html" target="_blank" style="cursor: pointer;"><img style="width: 100%;" src="imgs/pro-visual/sketch.png"></a>
+			<div class="tools" style="color: rgba(255,255,255,0.7);">Drawn with Sketchbook Pro on Wacom <img src="imgs/logos/sk.png"></div>
+		</div>
+	</div>
+	<div class="module" style="background-color: #393837; padding: 0;">
+		<div class="content" style="padding: 0px 3% 35px 3%">
+			<div class="txt1" style="text-align: center; padding-bottom: 12px; color: rgba(255,255,255,0.7);">Visual Designs (Click to view large images)</div>
+			<a href="ps.html" target="_blank" style="cursor: pointer;"><img style="width: 100%;" src="imgs/pro-visual/ps.png"></a>
+			<div class="tools" style="color: rgba(255,255,255,0.7);">Designed with PS, AI and Sketch<img src="imgs/logos/ps.jpg"><img src="imgs/logos/ai.jpg"><img src="imgs/logos/sketch.jpg"></div>
+		</div>
+	</div>
+	<div class="module" style="background-color:#393837;">
+		<div class="content" style="padding: 20px 0;">
+			<div class="txt1" style="text-align: center; padding-bottom: 12px; color: rgba(255,255,255,0.7);">3D Modelling</div>
+			<!-- <div class="txt1" style="text-align: center;">Hand drawings with wacom (Click to view large images)</div> -->
+			<img style="width: 92%;" src="imgs/pro-3D/camera1.png">
+			<img style="width: 92%;" src="imgs/pro-3D/scooter.png">
+			<img style="width: 92%;" src="imgs/pro-3D/camera.png">
+			<div class="tools" style="padding: 0 4%; color: rgba(255,255,255,0.7);">Made with Solidworks, Rhino and Keyshot<img src="imgs/logos/sw.jpg"> <img src="imgs/logos/rh.jpg"> <img src="imgs/logos/ks.jpg"></div>
+		</div>
+	</div>
+	
+
+	<a href="#"><div class="to-top"></div></a>
+	
+	<div class="footer ports" style="background-color:#393837;">
+		This website is designed and developed by Baoling Yang, all copyright reserved.<br/>
+		Copyright @杨宝玲 2017
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop >= currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+
+				currTop = windowTop;
+
+			});
+
+			$(".tags>.btn").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		}); 
+	</script>
+
+</body>
+</html>
