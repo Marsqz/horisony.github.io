@@ -274,7 +274,7 @@ img{
 .module>.content{
 	width: 988px;
 	margin: auto;
-	padding: 60px 4% 60px 4%;
+	padding: 60px 2% 60px 2%;
 }
 .module>.content>.title{
 	font-size: 1.9em;
@@ -379,7 +379,9 @@ img{
 	background-image: url(../imgs/pro-journey/walking.png);
 	background-position: 0px 0px;
 	animation: walking-anim 1s infinite;
-	margin: auto;	
+	margin: auto;
+	margin-top: -30px;
+	
 }
 @keyframes walking-anim{
 	0% {background-position-x: 1400px; }
@@ -414,7 +416,7 @@ img{
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	text-align: left;
 	/*padding-left: 280px;*/
-	padding-top: 120px;
+	padding-top: 90px;
 }
 #launch-btn{
 	background: #186bb3;
