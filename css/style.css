@@ -301,7 +301,7 @@ img{
 }
 .module>.content>.txt1{
 	font-size: 1.2em;
-	/*line-height: 120%;*/
+	line-height: 120%;
 	color: #666;
 	text-align: justify;
 }
@@ -686,7 +686,7 @@ img{
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #f2483b;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -757,4 +757,53 @@ img{
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.self-container{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.self-intro-bo{
+	width: 580px;
+}
+.photo-container{
+	width: 80px;
+	float: left;
+}
+.myphoto{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.intro-text{
+	width: 500px;
+	padding: 12px 0 12px 30px;
+	color: rgba(255,255,255,0.7);
+	float: left;
+	line-height: 1.2;
+}
+.link-my{
+	margin-top: 12px;
+}
+.link-my>a{
+	float: left;
+	margin-right: 20px;
+	color: #f2483b;
+	text-decoration: underline;
+}
+.design3-container{
+	position: relative;
+}
+.gift-gif{
+	width: 16%;
+	position: absolute;
+	top: 90px;
+	right: 14%;
+}
+.gift-gif>div{
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.2;
+	margin-top: 14px;
+	color: red;
 }
