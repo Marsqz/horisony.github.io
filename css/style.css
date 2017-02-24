@@ -326,7 +326,7 @@ img{
 }
 .module>.content>.title-small{
 	font-weight: normal;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	padding-bottom: 7px;
 }
 .banner {
@@ -493,7 +493,7 @@ img{
 	padding: 0 4% 12px 4%;
 	line-height: 120%;
 	color: #666;
-	font-size: 1em;
+	font-size: 1.1em;
 	text-align: justify;
 	padding-bottom: 12px;
 }
