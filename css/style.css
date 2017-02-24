@@ -326,7 +326,7 @@ img{
 }
 .module>.content>.title-small{
 	font-weight: normal;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	padding-bottom: 7px;
 }
 .banner {
@@ -807,3 +807,8 @@ img{
 	margin-top: 14px;
 	color: red;
 }
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+
