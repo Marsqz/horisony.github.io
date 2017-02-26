@@ -470,12 +470,15 @@ img{
 .video-container{
 	position: relative; 
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
+	-webkit-justify-content: center;
 	align-items: center;
+	-webkit-align-items: center;
 }
 .video-container>img{
 	position: absolute;
-	opacity: 0.95;
+	opacity: 1;
 }
 .play-btn{
 	width: 90px;
@@ -487,7 +490,7 @@ img{
 	padding-top: 12px;
 }*/
 .video-container>img:hover{
-	opacity: 0.75;
+	opacity: 0.85;
 }
 .txt-video{
 	padding: 0 4% 12px 4%;
@@ -639,6 +642,11 @@ img{
 		width: 60%;
 		margin-left: 20%;
 	}
+	.project-container{
+		width: 50%;
+		height: 210px;
+
+	}
 }
 @media(max-width: 579px) {/*row become columns*/
 	.container-my{
@@ -662,13 +670,27 @@ img{
 	.module>.content>.col-md-6-my>.txt{
 		padding-bottom: 20px;
 	}
+	.project-container{
+		width: 100%;
+		height: 260px;
+		background-position: 50% 25%!important;
+	}
+	.self-intro-bo{
+		width: 100%;
+	}
+	.photo-container{
+		display: none;
+	}
+	.intro-text{
+		width:100%!important;
+	}
 }
-@media (max-width: 590px) {
+/*@media (max-width: 590px) {
 	.project-container{
 		width: 50%;
 		height: 210px;
 	}
-}
+}*/
 @media (max-width: 370px) {
 	.project-container{
 		width: 100vw;
