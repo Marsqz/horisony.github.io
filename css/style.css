@@ -40,8 +40,10 @@ img{
 .flex{
 	display: flex;
 	display: -webkit-flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 }		
 .flex--center{
 	justify-content: center;
@@ -782,6 +784,7 @@ img{
 }
 .self-container{
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	margin-top: 30px;
 }
