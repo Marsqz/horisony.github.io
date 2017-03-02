@@ -357,6 +357,7 @@ img{
 .video-container.video-pro{
 	transition: opacity 300;
 	opacity: 1;
+	position: relative;
 }
 .video-container.video-pro:hover{
 	opacity: .9;
@@ -446,6 +447,7 @@ img{
 }
 .footer.ports{
 	/*margin-top: 20px;*/
+	padding: 12px;
 }
 .self-intro>.title{
 	font-size: 1.3em;
@@ -471,16 +473,18 @@ img{
 }
 .video-container{
 	position: relative; 
-	display: flex;
+	/*display: flex;
 	display: -webkit-flex;
 	justify-content: center;
 	-webkit-justify-content: center;
 	align-items: center;
-	-webkit-align-items: center;
+	-webkit-align-items: center;*/
 }
 .video-container>img{
 	position: absolute;
 	opacity: 1;
+	top: calc(50% - 62px);
+	left: calc(50% - 62px);
 }
 .play-btn{
 	width: 90px;
@@ -685,6 +689,13 @@ img{
 	}
 	.intro-text{
 		width:100%!important;
+	}
+	.module>.content{
+		padding-left: 15px!important;
+		padding-right: 15px!important;
+	}
+	.col-md-6-my.intro{
+		padding-top: 0!important;
 	}
 }
 /*@media (max-width: 590px) {
