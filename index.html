@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type"  content="text/html; charset=utf-8"> 
+	    <meta charset="utf-8">
+		<title>BaolingUX</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="content c-1">1</div>			
+			<div class="content c-2">2</div>	
+			<div class="content c-3">3</div>
+		</div>	
+	</body>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var topWindow = $(window).scrollTop();
+				var topContainer = $(".container-fluid").offset().top;
+				if(topWindow>topContainer){
+					$(".c-1").css({"transform":"translateY(-"+ (topWindow-topContainer)/5 + "px)"});
+				}else{
+					$(".c-1").css({"transform":"translateY(0px)"});
+				}
+			});
+		});
+	</script>
+</html>

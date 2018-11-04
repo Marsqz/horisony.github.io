@@ -1,0 +1,29 @@
+body{
+  font-family: PingFang SC;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  background-image: url(../imgs/bg.jpg);
+  background-size: 100% auto;
+  padding: 30px;
+  height: 1200px;
+  padding-top: 200px;
+  margin-top: 100px;
+}
+.content{
+  width: 180px;
+  height: 120px;
+  margin: 4px 6px;
+  border-radius: 6px;
+  background-image: url(../imgs/visual.png);
+  background-size: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
