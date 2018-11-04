@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+	    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>BaolingUX</title>
+		<style type="text/css">
+			body{
+				font-family: PingFang SC;
+				font-size: 14px;
+				color: ;
+				/*background: #F9F7F2; */
+				padding: 20px;
+			}
+			a,
+			a:hover,
+			a:focus,
+			a:active{
+				color: #5E3F1E;
+				text-decoration: none;
+			}
+			a:hover{
+				color:#D66A44; 
+			}
+	
+			.flex{
+				display: flex;
+			}
+			.flex-around{
+				justify-content: space-around;
+			}
+			.module{
+				float: left;
+				margin: 4px 6px;
+			}
+			.content{
+				width: 180px;
+				height: 120px;
+				position: relative;
+				border: 1px solid #ddd;
+				border-radius: 6px;
+				background-image: url(imgs/visual.png);
+				background-size: cover;
+			}
+			.mask-black{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(0,0,0,0.6);
+				border-radius: 6px;
+				display: flex;
+				align-items: center; 
+				padding: 14px;
+			}
+			.title-1{
+				color: white;
+				font-size: 16px;
+			}
+			.txt-1{
+				color: white;
+				font-weight: lighter;
+			}
+			.txt-container{
+				/*display: flex;*/
+				align-items: center; 
+			}
+			.content.c-1>.mask-black{
+				opacity: 0;
+				transition: all .2s;
+			}
+			.content.c-1:hover .mask-black{
+				opacity: 1;
+			}
+			.mask-blue{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 14px;
+				background: transparent;
+				transition: all .2s;
+			}
+			.txt-1{
+				display: none;
+				transition: all .2s;
+			}
+			.title-1{
+				transition: all .2s;
+			}
+			.content.c-2:hover .mask-blue{
+				background: rgba(10,100,200,0.9);
+			}
+			.content.c-2:hover .txt-1{
+				display: inline-block;
+			}
+			.content.c-2:hover .title-1{
+				margin-top: 20px;
+				font-weight: bold;
+			}
+			.content.c-3:hover{
+				background-position: 50% 100%;
+				transition: all .2s;
+			}
+			.content.c-3{
+				background-position: 50% 50%;
+				transition: all .2s;
+			}
+			.content.c-4{
+				/*width: 200px;*/
+				transition: all .3s;
+			}
+			.content.c-4:hover {
+				/*width: 200px;*/
+				transition: all .3s;
+				transform: scale(1.1,1.1);
+			}
+			.content.c-5{
+				transition: all .3s;
+			}
+			.content.c-5:hover {
+				transition: all .3s;
+				transform: translateY(-6px);
+			}
+			.content.c-6:hover {
+				transition: all .3s;
+				box-shadow: 0 2px 16px rgba(0,30,70,0.4);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="module">
+			hover时出现遮罩和文字
+			<div class="content c-1">
+				<div class="mask-black">
+					<div class="txt-container">
+						<div class="title-1">BaolingUX</div>
+						<div class="txt-1">Project 1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="module">
+			hover时出现遮罩,移动文字
+			<div class="content c-2">
+				<div class="mask-blue">
+					<div class="txt-container">
+						<div class="title-1">BaolingUX</div>
+						<div class="txt-1">Project 2</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module">
+			hover时移动背景图
+			<div class="content c-3">
+				<div class="mask-blue">
+					<div class="txt-container">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module">
+			hover时放大
+			<div class="content c-4">
+				<div class="mask-blue">
+				</div>
+			</div>
+		</div>
+		<div class="module">
+			hover时整体上移
+			<div class="content c-5">
+				<div class="mask-blue">
+				</div>
+			</div>
+		</div>
+		<div class="module">
+			hover时投影
+			<div class="content c-6">
+				<div class="mask-blue">
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+	</body>
+
+</html>

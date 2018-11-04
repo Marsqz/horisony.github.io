@@ -1,29 +1,91 @@
-body{
-  font-family: PingFang SC;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
+body {
+	color:#111;
+	background: white;
+	margin:0;
+	/*font-weight: 300;*/
+	font: 14px/1.6em Capital, futura-pt,Helvetica,Arial,sans-serif;
+	/*font-family: "futura-pt", sans-serif, "Neue Haas Grotesk Display",'Work Sans', 'helvetica neue',sans-serif;*/
+	/*'Work Sans', sans-serif, "Neue Haas Grotesk Display", 400*//*'Open Sans', sans-serif*/
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	/*letter-spacing: 1px;*/
+
 }
-.container-fluid{
-  background-image: url(../imgs/bg.jpg);
-  background-size: 100% auto;
-  padding: 30px;
-  height: 1200px;
-  padding-top: 200px;
-  margin-top: 100px;
+body {
+	background-color: #f9f9f9;
+	padding: 20px;
+
 }
-.content{
-  width: 180px;
-  height: 120px;
-  margin: 4px 6px;
-  border-radius: 6px;
-  background-image: url(../imgs/visual.png);
-  background-size: cover;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+a,
+a:hover,
+a:focus,
+a:active{
+	color: #157EDC;
+	/*text-decoration: none;*/
+}
+.container-main{
+	margin: auto;
+}
+@media screen and (min-width: 601px) {
+	.container-main{
+		width: 600px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.container-main{
+		width: 100%;
+	}
 }
 
 
+img{
+	border:none;
+}
+.title{
+	font-size: 28px;
+	text-align: center;
+	padding: 26px 0 40px 0;
+	line-height: 140%;
+}
+.section_link{
+	/*display: block;*/
+	font-size: 16px;
+	line-height: 160%;
+	margin: 0 0 24px 0;
+}
+.section_link span:nth-child(1){
+	display: block;
+	font-weight: bold;
+}
+.section_link span:nth-child(2){
+	display: block;
+	font-weight: light;
+	/*color: #444;*/
+}
+.footer{
+	padding-top: 24px;
+	border-top: 1px solid #ddd;
+}
+.baoling_wechat{
+	width: 200px;
+	margin-top: 12px;
+}
 
-
-
-
+/*.section{
+	width: 300px;
+	height: 150px;
+	border: 1px solid #f1f1f1;
+	border-radius: 6px;
+	padding: 16px 20px;
+}
+.section:hover{
+	box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+.title-1{
+	font-size: 20px;
+}
+.txt-1{
+	font-size: 14px;
+	color: #666;
+}*/
