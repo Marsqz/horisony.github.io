@@ -108,7 +108,7 @@ img{
 }
 .section_link span:nth-child(2){
 	display: block;
-	font-weight: light;
+	font-weight:lighter;
 	color: #555;
 	line-height: 130%;
 	/*color: #444;*/
