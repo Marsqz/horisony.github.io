@@ -17,20 +17,16 @@
 	<div class="nav-bar-vertical">
 		<div class="nav-brand"></div>
 		<ul>
-			<li>学什么</li>
-			<li>第一周</li>
-			<li>第二周</li>
-			<li>第三周</li>
-			<li>第四周</li>
-			<li>第五周</li>
-			<li>第五周</li>
+			<a href="#"><li>学什么</li></a>
+			<a href="#how"><li>怎么学</li></a>
+			<a href="#who"><li>谁来教</li></a>
 		</ul>
 	</div> 
 	<div class="container-main" >
 		<div class="title"> 28天学会开发作品集网站 </div>
-			
-			<div class="section_link">
-				<p> 28天后可学会，包括但不限于我的 <a style="font-weight: bold;" href="http://baoling.top/portfolio/index.html" target="_blank"> 精简版自适应作品集网站 </a>上的所有功能。包含自适应设计、内容排版、hover动效等等。</p>
+			<!-- <div class="label-bg">学什么</div> -->
+			<div class="section_link" style="margin-top: 0px; margin-bottom: 12px;">
+				<p> 28天后可学会，包括但不限于我的 <a style="font-weight: bold;" href="http://baoling.top/portfolio/index.html" target="_blank"> 精简版自适应作品集网站 </a>上的所有功能。包含自适应设计、内容排版、动效等等。</p>
 			</div>
 
 			<video id="video0" controls style="width: 100%; height: 100%;" >
@@ -42,25 +38,25 @@
 			<div class="section_link"> 
 				<span>第一周  编程工具/网页文字排版/链接 </span>
 				<span>你将学会：如何设置开发字色、字体、粗细、划线、行距、字距、对齐、缩进、链接、按钮、hover效果等。</span>
-				<a href="Week1_txt/week1.html" target="_blank"> 效果示例 </a>
+				<a class="cases-page" href="Week1_txt/week1.html" target="_blank"> 效果示例 </a>
 			</div>
 
 			<div class="section_link"> 
 				<span>第二周  图片/icon/音频/视频 </span>
 				<span>你将学会：图片尺寸、投影、裁切、矢量图、icon以及hover效果、音频、视频。</span>
-				<a href="Week2_image/week2.html" target="_blank"> 效果示例 </a>
+				<a class="cases-page" href="Week2_image/week2.html" target="_blank"> 效果示例 </a>
 			</div>
 
 			<div class="section_link"> 
 				<span>第三周  响应式布局 </span>
 				<span>你将学会：如何布局网页各个模块，并且根据浏览器尺寸自动调整布局。包含bootstrap教程。</span>
-				<a href="Week3_layout/week3.html" target="_blank"> 效果示例 </a>
+				<a class="cases-page" href="Week3_layout/week3.html" target="_blank"> 效果示例 </a>
 			</div>
 
 			<div class="section_link"> 
 				<span>第四周  交互/动画/github生成个人网站 </span>
 				<span>你将学会：hover效果、fade in、fade out、移动、字体缩放、改变颜色，以及如何生成自己的网站。包含部分JQuery知识。</span>
-				<a href="Week4_animate/week4.html" target="_blank"> 效果示例 </a>
+				<a class="cases-page" href="Week4_animate/week4.html" target="_blank"> 效果示例 </a>
 			</div>
 
 			<div class="section_link"> 
@@ -69,33 +65,48 @@
 				<!-- <a href="Week1_txt/index.html" target="_blank"> 效果示例 </a> -->
 			</div>
 
-			<div style="font-size: 16px; font-weight: bold; padding-bottom: 8px;"> 每天的打卡视频示例 </div>
-			<span class="cases">示例1. 网页基本布局</span>
-			<video controls style="width: 100%; height: 100%;" >
-				<source src="video/layout.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video><br/><br/>
-			<span class="cases">示例2. 滚动显示隐藏</span>
-			<video controls style="width: 100%; height: 100%;" >
-				<source src="video/scroll.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		
 			<div class="footer">
-				<div class="section_link" style="font-size: 14px; color: #555;">
-					想完成课程的同学可以加我微信，注明“学习HTML/CSS”。<br/>
-					或直接扫小程序二维码进群学习。每天提供5min左右的视频教程，学员在小程序中上传每日学习成果截图即可。<br/><br/>
-					授课时间：2018年10月13日往后，任何日期都可以开始学习，每个人有自己的学习进度，坚持28天即可。<br/>
-					打卡方式：每天提供5min左右的教学视频，学习完后需自己写代码，完成当天的知识点。其中，只要完成当天众多知识点中的一点并截图打卡，即算打卡成功。<br/><br/>
+				<div class="section_link" style=" color: #555;">
+					<div id="how" style="font-size: 18px; font-weight: bold; padding-bottom: 8px; color: #111;"> 怎么学 </div>
+					<span style="padding-bottom: 12px;">
+						每天提供5min左右的教学视频，学习完后需自己写代码，完成当天的知识点。其中，只要完成当天众多知识点中的一点并截图打卡，即算打卡成功。
+					</span>
+					授课时间：任何日期都可以开始学习，每个人有自己的学习进度，坚持打卡28节课即可。<br/><br/>
+					<div style="font-weight: bold; font-size: 16px; padding-bottom: 4px;"> 每天的打卡视频示例 </div>
+					<span class="cases">示例1. 网页基本布局</span>	
+					<video controls style="width: 100%; height: 100%;" >
+						<source src="video/layout.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video><br/><br/>
+					<span class="cases">示例2. 滚动显示隐藏</span>
+					<video controls style="width: 100%; height: 100%;" >
+						<source src="video/scroll.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div style="font-weight: bold; font-size: 16px; padding: 24px 0 4px 0;"> 微信答疑 </div>
+					<div style="font-size: 16px; margin-bottom: 4px;">所有加入打卡的同学都会加入我的答疑群，在线解答同学们关于本课程的任何问题。以下是答疑历史记录。</div>
+
+					<img style="width: 100%;" src="imgs/wechat.png">
+					
+					</div>
+
+					<div id="who" style="font-size: 18px; font-weight: bold; padding: 24px 0 8px 0; color: #111; border-top: 1px solid #ddd;"> 谁来教 </div>
+					Baoling：目前是美团点评的交互设计师，前eBay全栈设计师。<br/><br/>
+
+				<!-- 	<div style="font-weight: bold; padding: 18px 0 4px 0; color:#555;"> 学费 </div> -->
+					<div style="font-size: 16px;">
 					学费：129元<br/>
 					奖学金：28次课程在28内天完成打卡即可获得60元奖学金。(每天可打卡多关，所以可按自己的时间安排来安排每天学习几节课。)
 					<br/><br/>
 					关于退课：打卡开始4天内退课可全部退款，5-8天内退课可退70元，8天及以上的退课，不退款，但只要坚持在28天内完成课程，即可获60元奖学金。<br/><br/>
-					<!-- Baoling：目前是美团点评的交互设计师，前eBay全栈设计师。 -->
+	
 					<div>
+						想完成课程的同学可以加我微信 a-baoling，注明“学习开发网站”。<br/>
+						或直接扫小程序二维码进群学习。<br/>
 						<img class="baoling_wechat" src="imgs/baoling.jpg">
 						<img class="baoling_wechat" src="imgs/QR.png">
 					</div>
+					
 				</div>
 			</div>
 	</div>
