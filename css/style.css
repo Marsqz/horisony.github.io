@@ -68,6 +68,9 @@ a:active{
 		margin-left: 170px;
 		/*padding: 20px;*/
 	}
+	.poster-me{
+		width: 500px;
+	}
 }
 @media screen and (max-width: 750px) {
 	.container-main{
@@ -75,6 +78,9 @@ a:active{
 	}
 	.nav-bar-vertical{
 		display: none;
+	}
+	.poster-me{
+		width: 100%;
 	}
 }
 .label-bg{
