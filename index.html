@@ -9,7 +9,7 @@
 	<title>Baoling's Website</title>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
@@ -116,19 +116,19 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript">
 		function query(selector) {
-			    return Array.from(document.querySelectorAll(selector));
-			}
-			var io = new IntersectionObserver(function(items) {
-			    items.forEach(function(item) {
+			return Array.from(document.querySelectorAll(selector));
+		}
+		var io = new IntersectionObserver(function(items) {
+			items.forEach(function(item) {
 				var target = item.target;
 				if(target.getAttribute('src') == 'imgs/loading.gif') {
-				    target.src = target.getAttribute('data-src');
+					target.src = target.getAttribute('data-src');
 				}
-			    })
-			});
-			query('img').forEach(function(item) {
-			    io.observe(item);
-			});
+			})
+		});
+		query('img').forEach(function(item) {
+			io.observe(item);
+		});
 	</script>
 
 </body>

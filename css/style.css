@@ -21,7 +21,7 @@ a:active{
 }
 @font-face{
 	font-family: my-lishu;
-	src: url('../fonts/lishu.TTF');
+	src: url('../fonts/Alibaba-PuHuiTi-Bold.ttf');
 }
 /*.container-main{
 	margin: auto;
@@ -117,6 +117,7 @@ img{
 	padding: 26px 0 26px 0;
 	line-height: 140%;
 	font-family: my-lishu;
+	color: #333;
 }
 .section_link{
 	/*display: block;*/
