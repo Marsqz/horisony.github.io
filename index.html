@@ -126,20 +126,41 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript">
-		function query(selector) {
-			return Array.from(document.querySelectorAll(selector));
-		}
-		var io = new IntersectionObserver(function(items) {
-			items.forEach(function(item) {
-				var target = item.target;
-				if(target.getAttribute('src') == 'imgs/loading.gif') {
-					target.src = target.getAttribute('data-src');
-				}
-			})
-		});
-		query('img').forEach(function(item) {
-			io.observe(item);
-		});
+	   	function lazyload() {
+   		    var images = $('img');
+   		    var len    = images.length;
+   		    var n      = 0;   
+   		    return function() {
+	   			var windowHeight = document.documentElement.clientHeight;
+	   			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	   			for(var i = n; i < len; i++) {
+	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			        if(images[i].getAttribute('src') === 'imgs/loading.gif') {
+	   				     images[i].src = images[i].getAttribute('data-src');
+	   				}
+	   				n = n + 1;
+	   			    }
+	   			}
+   		    }
+   		}
+   		var loadImages = lazyload();
+		loadImages(); 
+   		window.addEventListener('scroll', lazyload(), false);
+		window.addEventListener('resize', lazyload(), false);
+		// function query(selector) {
+		// 	return Array.from(document.querySelectorAll(selector));
+		// }
+		// var io = new IntersectionObserver(function(items) {
+		// 	items.forEach(function(item) {
+		// 		var target = item.target;
+		// 		if(target.getAttribute('src') == 'imgs/loading.gif') {
+		// 			target.src = target.getAttribute('data-src');
+		// 		}
+		// 	})
+		// });
+		// query('img').forEach(function(item) {
+		// 	io.observe(item);
+		// });
 	</script>
 
 </body>
