@@ -22,6 +22,19 @@ a:active{
 /*.container-main{
 	margin: auto;
 }*/
+/*.my-link{
+	background: #5147B9; 
+	padding: 3px 8px;
+	color: white;
+	border-radius: 14px;
+	transition: all 0.3;
+}
+.my-link:hover{
+	color: white;
+	box-shadow: 0 1px 8px #9887F9;
+	transition: all 0.3;
+}*/
+
 .nav-brand{
 	width: 56px;
 	height: 56px;
