@@ -19,6 +19,10 @@ a:active{
 	color: #5147B9;
 	text-decoration: none;
 }
+@font-face{
+	font-family: my-lishu;
+	src: url('../fonts/lishu.TTF');
+}
 /*.container-main{
 	margin: auto;
 }*/
@@ -112,6 +116,7 @@ img{
 	text-align: center;
 	padding: 26px 0 26px 0;
 	line-height: 140%;
+	font-family: my-lishu;
 }
 .section_link{
 	/*display: block;*/
