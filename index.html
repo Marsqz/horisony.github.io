@@ -74,13 +74,6 @@
 					授课时间：任何日期都可以开始学习，每个人有自己的学习进度，坚持打卡28节课即可。<br/><br/>
 					<div style="font-weight: bold; font-size: 16px; padding-bottom: 4px;"> 每天的打卡视频示例 </div>
 
-					<!-- <span class="cases">示例1. 网页基本布局</span>	
-					
-					<video id="video-1" poster="imgs/layout.png"  controls style="width: 100%;" >
-						<source src="video/layout.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video><br/><br/> -->
-
 					<span class="cases">示例1. 滚动显示隐藏</span>
 					<video id="video-2" poster="imgs/scroll.png"  controls style="width: 100%;" >
 						<source src="video/scroll.mp4" type="video/mp4">
@@ -96,7 +89,7 @@
 					<div style="font-weight: bold; font-size: 16px; padding: 24px 0 4px 0;"> 微信答疑 </div>
 					<div style="font-size: 16px; margin-bottom: 4px;">所有加入打卡的同学都会加入我的答疑群，在线解答同学们关于本课程的任何问题。以下是答疑历史记录。</div>
 
-					<img style="width: 100%;" src="imgs/wechat.png">
+					<img style="width: 100%;" src="">
 					
 					</div>
 
@@ -104,32 +97,32 @@
 
 					Baoling：目前是蔚来汽车高级体验设计师，前美团点评交互设计师，前eBay全栈设计师，东南大学工业设计硕士。用自己开发的作品集网站拿到的蔚来汽车和美团点评的offer。<br/><br/>
 
-				<!-- 	<div style="font-weight: bold; padding: 18px 0 4px 0; color:#555;"> 学费 </div> -->
-					<!-- <div style="font-size: 16px; color: #555;">
-					学费：129元<br/>
-					奖学金：<br/>
-					A. 28次课程在28内天完成打卡即可获得30元奖学金。(每天可打卡多关，所以可按自己的时间安排来安排每天学习几节课。)<br/>
-					B. 从开始打卡日期算起，两个月内完成个人作品集（需包含至少自适应导航、自适应排版、返回顶部）开发并发布到网上，将网址和文末推广图发到朋友圈，截图给我，即可获得30元奖学金。<br/>
-					C. 我们每个月月底会把已发布的作品集网站网址集合起来再发一次到群里，作为大家互相学习的途径。同时也投票评比一个做的最好网站，这个人将获得一个小小的红包。<br/><br/>
-					以上奖学金可累计。 -->
-					<!-- <br/><br/> -->
-					<!-- 关于退课：打卡开始4天内退课可全部退款，5-8天内退课可退70元，9天及以上的退课，不退款，但只要坚持在28天内完成课程，即可获60元奖学金。<br/><br/>
-	 -->
 					<div>
 						想完成课程的同学可以加我微信 a-baoling，注明“学习开发网站”。<br/>
 						或直接扫小程序二维码进群学习。<br/>
-						<img class="baoling_wechat" src="imgs/baoling.jpg">
-						<img class="baoling_wechat" src="imgs/QR.png">
+						<img class="baoling_wechat" src="">
+						<img class="baoling_wechat" src="">
 						<!-- <div style="padding-top: 12px;">学费129元。前4节课不满意可全额退款，5-8节课退课可退60元，9节以上不退款。</div> -->
 					</div>
 					<div style="padding-top: 30px;">
 						推广图<br/>
-						<img class="poster-me"  class="baoling_wechat" src="imgs/poster2.png">
+						<img class="poster-me"  class="baoling_wechat" src="">
 					</div>
 					
 				</div>
 			</div>
 	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var arrImg = ['imgs/wechat.png','imgs/baoling.jpg', 'imgs/QR.png', 'imgs/poster2.png'];
+			var imgA =  $('img');
+			for (var i = 0; i < arrImg.length; i++){
+				imgA[i].setAttribute('src', arrImg[i]);
+			}
+		}
+	</script>
 
 </body>
 </html>
