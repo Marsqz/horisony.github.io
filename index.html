@@ -89,7 +89,7 @@
 					<div style="font-weight: bold; font-size: 16px; padding: 24px 0 4px 0;"> 微信答疑 </div>
 					<div style="font-size: 16px; margin-bottom: 4px;">所有加入打卡的同学都会加入我的答疑群，在线解答同学们关于本课程的任何问题。以下是答疑历史记录。</div>
 
-					<img style="width: 100%;" src="">
+					<img style="width: 100%;" src="imgs/loading.gif" data-src='imgs/wechat.png'>
 					
 					</div>
 
@@ -100,13 +100,13 @@
 					<div>
 						想完成课程的同学可以加我微信 a-baoling，注明“学习开发网站”。<br/>
 						或直接扫小程序二维码进群学习。<br/>
-						<img class="baoling_wechat" src="">
-						<img class="baoling_wechat" src="">
+						<img class="baoling_wechat" src="imgs/loading.gif" data-src='imgs/baoling.jpg'>
+						<img class="baoling_wechat" src="imgs/loading.gif" data-src='imgs/QR.png'>
 						<!-- <div style="padding-top: 12px;">学费129元。前4节课不满意可全额退款，5-8节课退课可退60元，9节以上不退款。</div> -->
 					</div>
 					<div style="padding-top: 30px;">
 						推广图<br/>
-						<img class="poster-me"  class="baoling_wechat" src="">
+						<img class="baoling_wechat" src="imgs/loading.gif" data-src='imgs/poster2.png'>
 					</div>
 					
 				</div>
@@ -115,13 +115,20 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript">
-		window.onload = function(){
-			var arrImg = ['imgs/wechat.png','imgs/baoling.jpg', 'imgs/QR.png', 'imgs/poster2.png'];
-			var imgA =  $('img');
-			for (var i = 0; i < arrImg.length; i++){
-				imgA[i].addEventListener('load', imgA[i].setAttribute('src', arrImg[i]) );
+		function query(selector) {
+			    return Array.from(document.querySelectorAll(selector));
 			}
-		}
+			var io = new IntersectionObserver(function(items) {
+			    items.forEach(function(item) {
+				var target = item.target;
+				if(target.getAttribute('src') == 'imgs/loading.gif') {
+				    target.src = target.getAttribute('data-src');
+				}
+			    })
+			});
+			query('img').forEach(function(item) {
+			    io.observe(item);
+			});
 	</script>
 
 </body>
