@@ -119,7 +119,7 @@
 			var arrImg = ['imgs/wechat.png','imgs/baoling.jpg', 'imgs/QR.png', 'imgs/poster2.png'];
 			var imgA =  $('img');
 			for (var i = 0; i < arrImg.length; i++){
-				imgA[i].setAttribute('src', arrImg[i]);
+				imgA[i].addEventListener('load', imgA[i].setAttribute('src', arrImg[i]) );
 			}
 		}
 	</script>
