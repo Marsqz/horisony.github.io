@@ -17,8 +17,10 @@ a:active{
 	text-decoration: none;
 }
 @font-face{
-	font-family: my-lishu;
-	src: url('../fonts/Alibaba-PuHuiTi-Bold.ttf');
+	font-family: my-font;
+	src: url('../fonts/SourceHanSansCN-Light-2.otf');
+	src: url('../fonts/SourceHanSansCN-Medium-2.otf');
+	src: url('../fonts/SourceHanSansCN-Regular-2.otf');
 }
 /*.container-main{
 	margin: auto;
