@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <title>Lazyload</title>
 	<style>
+		body{
+			font-family: my-font;
+		}
 	    .img_day {
 	    	display: block;
 			margin-bottom: 10px;
 			width: 300px;
 	    }
+	    @font-face{
+	    	font-family: my-font;
+	    	src: url('fonts/AaRunXing-2.ttf');
+	    }
+	    .title{
+	    	font-family: my-font;
+	    }
     </style>
 </head>
 <body>
+	<div class="title">标题</div>
 	<img class = "img_day" src="img/loading.gif" data-src="img/day1.png">
 	<img class = "img_day" src="img/loading.gif" data-src="img/day2.png">
 	<img class = "img_day" src="img/loading.gif" data-src="img/day3.png">
