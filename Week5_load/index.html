@@ -45,8 +45,8 @@
    		    var len    = images.length;
    		    var n      = 0;   
    		    return function() {
-	   			var windowHeight = document.documentElement.clientHeight;
-	   			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	   			var windowHeight = $(window).height();
+	   			var scrollTop = $(window).scrollTop() || 0;
 	   			for(var i = n; i < len; i++) {
 	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
 	   			        if(images[i].getAttribute('src') === 'img/loading.gif') {
