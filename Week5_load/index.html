@@ -32,9 +32,9 @@
 </head>
 <body>
 	<div class="loader">
-	  <div class="loader-inner ball-scale-ripple">
-	    <div></div>
-	  </div>
+	  	<div class="loader-inner ball-scale-ripple">
+	    	<div></div>
+	  	</div>
 	</div>
 
 	<div class="title">标题</div>
@@ -58,31 +58,31 @@
    		    var lenB   = images_bg.length;
    		    var n1     = 0;   
    		    var n2     = 0;   
-   		    return function() {
+   		    // return function() {
 	   			var windowHeight = $(window).height();
 	   			var scrollTop = $(window).scrollTop() || 0;
 	   			//images
 	   			for(var i = n1; i < len; i++) {
 	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
 	   			        if(images[i].getAttribute('src') == '') {
-	   				     images[i].src = images[i].getAttribute('data-src');
-	   				}
-	   				n1 = n1 + 1;
+	   				     	images[i].src = images[i].getAttribute('data-src');
+	   					}
+	   					n1 = n1 + 1;
 	   			    }
 	   			}
 	   			//images_bg
-	   			for(var i = n2; i < lenB; i++) {
-	   			    if(images_bg[i].offsetTop < windowHeight + scrollTop + 300) {
-	   			        if(images_bg[i].style.backgroundImage == '') {
-	   				     images_bg[i].style.backgroundImage = 'url('  + images_bg[i].getAttribute('data-src') + ')';
-	   				}
-	   				n2 = n2 + 1;
-	   			    }
-	   			}
-   		    }
+	   			// for(var i = n2; i < lenB; i++) {
+	   			//     if(images_bg[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			//         if(images_bg[i].style.backgroundImage == '') {
+	   			// 	     images_bg[i].style.backgroundImage = 'url('  + images_bg[i].getAttribute('data-src') + ')';
+	   			// 	}
+	   			// 	n2 = n2 + 1;
+	   			//     }
+	   			// }
+   		    // }
    		}
-   		var loadImages = lazyload();
-		loadImages(); 
+   		// var loadImages = lazyload();
+		lazyload(); 
    		window.addEventListener('scroll', lazyload(), false);
 		window.addEventListener('resize', lazyload(), false);
 
