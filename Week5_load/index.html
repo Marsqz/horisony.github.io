@@ -104,7 +104,7 @@
 	   			var windowHeight = $(window).height();
 	   			var scrollTop = $(window).scrollTop() || 0;
 	   			for(var i = n; i < len; i++) {
-	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			    if(images[i].offsetTop < windowHeight + scrollTop + 100) {
 	   			        if(images[i].getAttribute('src') === "") {
 	   				     	images[i].src = images[i].getAttribute('data-src');
 	   				     	console.log(i + "printed");
