@@ -31,11 +31,11 @@
     </style>
 </head>
 <body>
-	<div class="loader">
+	<!-- <div class="loader">
 	  	<div class="loader-inner ball-scale-ripple">
 	    	<div></div>
 	  	</div>
-	</div>
+	</div> -->
 
 	<div class="title">标题</div>
 	<img class = "img_day" src="" data-src="img/day1.png">
@@ -44,27 +44,30 @@
 	<img class = "img_day" src="" data-src="img/day4.png">
 	<img class = "img_day" src="" data-src="img/day5.png">
 	<img class = "img_day" src="" data-src="img/day6.png">
+	<img class = "img_day" src="" data-src="img/day7.png">
+	<img class = "img_day" src="" data-src="img/day8.png">
+	<img class = "img_day" src="" data-src="img/day9.png">
 
-	<div class="img_day img_bg" style="background-position: center; background-size: cover;" data-src="img/day12.png"></div>
+	<!-- <div class="img_day img_bg" style="background-position: center; background-size: cover;" data-src="img/day12.png"></div> -->
 
-   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+   	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
    
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	   
-	   	function lazyload() {
+	   	function lazyload1() {
    		    var images = $('img');
-   		    var images_bg = $('div.img_bg');
+   		    // var images_bg = $('div.img_bg');
    		    var len    = images.length;
-   		    var lenB   = images_bg.length;
+   		    // var lenB   = images_bg.length;
    		    var n1     = 0;   
-   		    var n2     = 0;   
-   		    // return function() {
+   		    // var n2     = 0;   
+   		    return function() {
 	   			var windowHeight = $(window).height();
 	   			var scrollTop = $(window).scrollTop() || 0;
 	   			//images
 	   			for(var i = n1; i < len; i++) {
 	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
-	   			        if(images[i].getAttribute('src') == '') {
+	   			        if(images[i].getAttribute('src') === '') {
 	   				     	images[i].src = images[i].getAttribute('data-src');
 	   					}
 	   					n1 = n1 + 1;
@@ -79,16 +82,43 @@
 	   			// 	n2 = n2 + 1;
 	   			//     }
 	   			// }
-   		    // }
+   		    }
    		}
-   		// var loadImages = lazyload();
-		lazyload(); 
+   		var loadImages = lazyload1();
+		loadImages(); 
+   		window.addEventListener('scroll', lazyload1(), false);
+		window.addEventListener('resize', lazyload1(), false);
+
+		// window.onload = function(){
+		// 	$('.loader').fadeOut(50);
+		// }
+
+	</script> -->
+
+	<script type="text/javascript">
+	   	function lazyload() {
+   		    var images = $('img');
+   		    var len    = images.length;
+   		    var n      = 0;   
+   		    return function() {
+	   			var windowHeight = $(window).height();
+	   			var scrollTop = $(window).scrollTop() || 0;
+	   			for(var i = n; i < len; i++) {
+	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			        if(images[i].getAttribute('src') === "") {
+	   				     	images[i].src = images[i].getAttribute('data-src');
+	   				     	console.log(i + "printed");
+	   					}
+	   					n = n + 1;
+	   			    }
+	   			}
+   		    }
+   		}
+		var loadImages = lazyload();
+		loadImages();
    		window.addEventListener('scroll', lazyload(), false);
 		window.addEventListener('resize', lazyload(), false);
-
-		window.onload = function(){
-			$('.loader').fadeOut(50);
-		}
+		
 	</script>
 
 </body>
