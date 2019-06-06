@@ -100,23 +100,21 @@
    		    var images = $('img');
    		    var len    = images.length;
    		    var n      = 0;   
-   		    // return function() {
+   		    return function() {
 	   			var windowHeight = $(window).height();
 	   			var scrollTop = $(window).scrollTop() || 0;
 	   			for(var i = n; i < len; i++) {
-	   			    if(images[i].offsetTop < windowHeight + scrollTop + 100) {
-	   			        if(images[i].getAttribute('src') === "") {
+	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			        if(images[i].getAttribute('src') === '') {
 	   				     	images[i].src = images[i].getAttribute('data-src');
-	   				     	console.log(i + "printed");
 	   					}
 	   					n = n + 1;
 	   			    }
 	   			}
-   		    // }
+   		    }
    		}
-		// var loadImages = lazyload();
-		// loadImages();
-		lazyload();
+		var loadImages = lazyload();
+		loadImages();
    		window.addEventListener('scroll', lazyload(), false);
 		window.addEventListener('resize', lazyload(), false);
 		
