@@ -12,6 +12,7 @@
 	    	display: block;
 			margin-bottom: 10px;
 			width: 300px;
+			height: 170px;
 	    }
 	    .img_bg{
 	    	height: 169px;
@@ -44,6 +45,11 @@
 	<img class = "img_day" src="" data-src="img/day4.png">
 	<img class = "img_day" src="" data-src="img/day5.png">
 	<img class = "img_day" src="" data-src="img/day6.png">
+	<img class = "img_day" src="" data-src="img/day7.png">
+	<img class = "img_day" src="" data-src="img/day8.png">
+	<img class = "img_day" src="" data-src="img/day9.png">
+	<img class = "img_day" src="" data-src="img/day10.png">
+	<img class = "img_day" src="" data-src="img/day11.png">
 
 	<div class="img_day img_bg" style="background-position: center; background-size: cover;" data-src="img/day12.png"></div>
 
@@ -74,9 +80,9 @@
 	   			for(var i = n2; i < lenB; i++) {
 	   			    if(images_bg[i].offsetTop < windowHeight + scrollTop + 300) {
 	   			        if(images_bg[i].style.backgroundImage == '') {
-	   				     images_bg[i].style.backgroundImage = 'url('  + images_bg[i].getAttribute('data-src') + ')';
-	   				}
-	   				n2 = n2 + 1;
+	   				     	images_bg[i].style.backgroundImage = 'url('  + images_bg[i].getAttribute('data-src') + ')';
+	   					}
+	   					n2 = n2 + 1;
 	   			    }
 	   			}
    		    }
@@ -85,6 +91,29 @@
 		loadImages(); 
    		window.addEventListener('scroll', lazyload(), false);
 		window.addEventListener('resize', lazyload(), false);
+
+			 //   	function lazyload() {
+		  //  		    var images = $('img');
+		  //  		    var len    = images.length;
+		  //  		    var n      = 0;   
+		  //  		    return function() {
+			 //   			var windowHeight = document.documentElement.clientHeight;
+			 //   			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			 //   			for(var i = n; i < len; i++) {
+			 //   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+			 //   			        if(images[i].getAttribute('src') === '') {
+			 //   				     images[i].src = images[i].getAttribute('data-src');
+			 //   				}
+			 //   				n = n + 1;
+			 //   			    }
+			 //   			}
+		  //  		    }
+		  //  		}
+		  //  		var loadImages = lazyload();
+				// loadImages(); 
+		  //  		window.addEventListener('scroll', lazyload(), false);
+				// window.addEventListener('resize', lazyload(), false);
+
 
 		window.onload = function(){
 			$('.loader').fadeOut(50);
