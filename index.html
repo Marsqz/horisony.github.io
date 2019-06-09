@@ -23,7 +23,7 @@
 		</ul>
 	</div> 
 	<div class="container-main" >
-		<div class="title" font-weight: bold;"> 作品集网站开发教程 </div>
+		<div class="title" > 作品集网站开发教程 </div>
 			<!-- <div class="label-bg">学什么</div> -->
 			<!-- <div class="section_link_1" style="margin-top: 0px; margin-bottom: 12px;">
 				<p> 28天后可学会，包括但不限于我的 <a class="link_btn" href="portfolio/index.html" target="_blank"> 精简版自适应作品集网站</a> 上的所有功能。包含自适应设计、内容排版、动效等等。</p>
@@ -68,7 +68,7 @@
 				<div class="section_link"> 
 					<span>Week 5</span>
 					<span>网页性能优化 </span>
-					<span>图片懒加载，字体压缩。</span>
+					<span>git命令行，图片文件压缩，字体压缩，懒加载，预加载。</span>
 					<a class="cases-page" href="Week5_load/index.html" target="_blank"> 效果示例 </a>
 				</div>
 				<div class="section_link ivs"></div>
@@ -105,7 +105,7 @@
 					<div class="q_title"> 微信答疑 </div>
 					<span>所有加入打卡的同学都会加入我的答疑群，在线解答同学们关于本课程的任何问题。以下是答疑历史记录。</span>
 
-					<img style="width: 100%;" src="imgs/loading.gif" data-src='imgs/wechat.png'>
+					<img style="width: 100%;" src="" data-src='imgs/wechat.png'>
 					
 				</div>
 				<div class="section_link_1">
@@ -115,14 +115,14 @@
 					<span>
 						想完成课程的同学可以加我微信 a-baoling，注明“学习开发网站”。<br/>
 						或直接扫小程序二维码进群学习。<br/>
-						<img class="baoling_wechat" src="imgs/loading.gif" data-src='imgs/baoling.jpg'>
-						<img class="baoling_wechat" src="imgs/loading.gif" data-src='imgs/QR.png'>
+						<img class="baoling_wechat" src="" data-src='imgs/baoling.jpg'>
+						<img class="baoling_wechat" src="" data-src='imgs/QR.png'>
 						<!-- <div style="padding-top: 12px;">学费129元。前4节课不满意可全额退款，5-8节课退课可退60元，9节以上不退款。</div> -->
 					</span>
 				</div>
 					<div style="padding-top: 30px;">
 						推广图<br/>
-						<img class="poster-me" src="imgs/loading.gif" data-src='imgs/poster2.png'>
+						<img class="poster-me" src="" data-src='imgs/poster2.png'>
 					</div>
 					
 				</div>
@@ -130,42 +130,30 @@
 	</div>
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	
 	<script type="text/javascript">
 	   	function lazyload() {
    		    var images = $('img');
    		    var len    = images.length;
    		    var n      = 0;   
    		    return function() {
-	   			var windowHeight = document.documentElement.clientHeight;
-	   			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	   			var windowHeight = $(window).height();
+	   			var scrollTop = $(window).scrollTop() || 0;
 	   			for(var i = n; i < len; i++) {
 	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
-	   			        if(images[i].getAttribute('src') === 'imgs/loading.gif') {
-	   				     images[i].src = images[i].getAttribute('data-src');
-	   				}
-	   				n = n + 1;
+	   			        if(images[i].getAttribute('src') === '') {
+	   				     	images[i].src = images[i].getAttribute('data-src');
+	   					}
+	   					n = n + 1;
 	   			    }
 	   			}
    		    }
    		}
-   		var loadImages = lazyload();
-		loadImages(); 
+		var loadImages = lazyload();
+		loadImages();
    		window.addEventListener('scroll', lazyload(), false);
 		window.addEventListener('resize', lazyload(), false);
-		// function query(selector) {
-		// 	return Array.from(document.querySelectorAll(selector));
-		// }
-		// var io = new IntersectionObserver(function(items) {
-		// 	items.forEach(function(item) {
-		// 		var target = item.target;
-		// 		if(target.getAttribute('src') == 'imgs/loading.gif') {
-		// 			target.src = target.getAttribute('data-src');
-		// 		}
-		// 	})
-		// });
-		// query('img').forEach(function(item) {
-		// 	io.observe(item);
-		// });
+		
 	</script>
 
 </body>
